@@ -1,0 +1,70 @@
+/*agregado */
+ .about-container {
+    display: flex;
+    flex-direction: column;
+}
+.puntos{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+.punto{
+  padding: 0.5rem;
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.itemSk{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+.item-sk{
+font-size: 50px; 
+margin: 1rem;
+}
+.text-about{
+  width: 50%;
+  margin: 1rem;
+  gap:1rem;
+  text-align: center;
+  
+}
+.text-about p{
+  letter-spacing: 1px;
+  margin: 1rem;
+}
+
+@media (max-width: 600px) {
+  .text-about{
+    width: 100%;
+ 
+  }
+  .puntos{
+    column-gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:start;
+
+    }
+
+}
+
+
+@media (min-width: 760px) and ( max-width:900px )   {
+  .text-about{
+    width: 100%;
+  }
+  .puntos{
+    gap: 1.7rem;
+        flex-wrap: wrap;
+    }
+
+}
